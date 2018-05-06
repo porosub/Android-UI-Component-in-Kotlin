@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         val cardView = recycler_cardview
         val itemList = mutableListOf<ExpandableCardViewAdapter.Item>()
 
+
         val archetypes = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Archetypes")
         archetypes.children = listOf(
                 ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Login/Register"),
@@ -103,78 +104,73 @@ class MainActivity : AppCompatActivity() {
 
         val expansionPanels = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Expansion Panels")
         expansionPanels.children = listOf(
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Splash Pages"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Onboarding"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Map View"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Messaging"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Calendar"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Media Players"))
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Basic"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Invoice"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Ticket"))
 
 
         val grid = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Grid")
         grid.children = listOf(
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Splash Pages"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Onboarding"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Map View"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Messaging"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Calendar"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Media Players"))
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Basic"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Single Line"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Two Line"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Sectioned"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Albums"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Caller"))
 
         val lists = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Lists")
         lists.children = listOf(
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Splash Pages"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Onboarding"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Map View"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Messaging"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Calendar"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Media Players"))
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Basic"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Sectioned"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Animation"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Expand"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Draggable"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Swipe"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Multi Selection"))
 
         val menu = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Menu")
         menu.children = listOf(
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Splash Pages"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Onboarding"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Map View"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Messaging"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Calendar"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Media Players"))
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Drawer News"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Drawer Mail"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Drawer Simple Light"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Drawer Simple Dark"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Drawer No Icon"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Overflow Toolbar"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Overflow List"))
 
         val pickers = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Pickers")
         pickers.children = listOf(
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Splash Pages"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Onboarding"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Map View"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Messaging"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Calendar"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Media Players"))
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Date Light"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Date Dark"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Time Light"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Time Dark"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Color RGB"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Location"))
 
         val progressActivity = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Progress & Activity")
         progressActivity.children = listOf(
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Splash Pages"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Onboarding"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Map View"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Messaging"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Calendar"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Media Players"))
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Basic"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Linear Center"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Linear Top"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Circle Center"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "On Scroll"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Pull Refresh"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Dots Bounce"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Dots Fade"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Dots Grow"))
 
         val sliders = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Sliders")
         sliders.children = listOf(
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Splash Pages"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Onboarding"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Map View"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Messaging"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Calendar"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Media Players"))
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Light"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Dark"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Color Picker"))
 
 
 
         val snackbarsToats = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Snackbards & Toasts")
         snackbarsToats.children = listOf(
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Splash Pages"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Onboarding"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Map View"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Messaging"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Calendar"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Media Players"))
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Basic"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Lift FAB"))
 
         val steppers = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Steppers")
         steppers.children = listOf(
