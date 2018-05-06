@@ -51,6 +51,9 @@ class ExpandableCardViewAdapter(var items: MutableList<Item>)
                 "Basic" -> {
                     context!!.startActivity(Intent(context, Main2Activity::class.java))
                 }
+                "Shifting" -> {
+                    context!!.startActivity(Intent(context, ShiftBottomNav::class.java))
+                }
                 else -> {
                     Toast.makeText(context, "Coming soon", Toast.LENGTH_SHORT).show()
                     Intent(context, Main2Activity::class.java)
