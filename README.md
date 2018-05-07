@@ -3,7 +3,7 @@
 ## Screen Archetypes
 ## Material Component
 ### Bottom Navigation
-* Basic
+* &#x2713; Basic
 * Shifting
 * Light
 * Dark
