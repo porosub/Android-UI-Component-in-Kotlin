@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Main2Activity" />
-        <activity android:name=".ShiftBottomNav"></activity>
+        <activity android:name=".ShiftBottomNav" />
+        <activity android:name=".DatePickerLightActivity"></activity>
     </application>
 
 </manifest>
