@@ -54,6 +54,9 @@ class ExpandableCardViewAdapter(var items: MutableList<Item>)
                 "Shifting" -> {
                     context!!.startActivity(Intent(context, ShiftBottomNav::class.java))
                 }
+                "Date Light" -> {
+                    context!!.startActivity(Intent(context, DatePickerLightActivity::class.java))
+                }
                 else -> {
                     Toast.makeText(context, "Coming soon", Toast.LENGTH_SHORT).show()
                     Intent(context, Main2Activity::class.java)
