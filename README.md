@@ -70,7 +70,7 @@
 * Overflow Toolbar
 * Overflow List
 ### Pickers
-* Date Light
+* &#x2713; Date Light
 * Date Dark
 * Time Light
 * Time Dark
