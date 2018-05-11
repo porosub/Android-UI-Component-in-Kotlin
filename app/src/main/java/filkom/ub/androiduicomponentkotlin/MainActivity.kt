@@ -169,7 +169,7 @@ class MainActivity : AppCompatActivity() {
 
         val snackbarsToats = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Snackbards & Toasts")
         snackbarsToats.children = listOf(
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Basic"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Basic Toast & Snackbar"),
                 ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Lift FAB"))
 
         val steppers = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Steppers")
