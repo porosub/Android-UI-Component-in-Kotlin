@@ -22,6 +22,7 @@ class ExpandableCardViewAdapter(var items: MutableList<Item>)
 
     data class Item(val type: Int = 0,
                     var text: String = "Default",
+                    var parent: String = "none",
                     var children: List<Item>? = null)
 
     inner class ItemHolder(v: View) : RecyclerView.ViewHolder(v) {
@@ -47,21 +48,46 @@ class ExpandableCardViewAdapter(var items: MutableList<Item>)
         val item = items[position]
 
         itemHolder?.textView!!.setOnClickListener {
-            when (itemHolder.textView.text) {
-                "Basic" -> {
-                    context!!.startActivity(Intent(context, Main2Activity::class.java))
+            when(item.parent){
+                "Bottom Navigation"->{
+                    when (itemHolder.textView.text) {
+                        "Shifting" -> {context!!.startActivity(Intent(context, ShiftBottomNav::class.java))}
+                        else -> {Toast.makeText(context, "Coming soon", Toast.LENGTH_SHORT).show()}
+                    }
                 }
-                "Shifting" -> {
-                    context!!.startActivity(Intent(context, ShiftBottomNav::class.java))
+                "Pickers"->{
+                    when (itemHolder.textView.text) {
+                        "Date Light" -> {context!!.startActivity(Intent(context, DatePickerLightActivity::class.java))}
+                        else -> {Toast.makeText(context, "Coming soon", Toast.LENGTH_SHORT).show()}
+
+                    }
                 }
-                "Date Light" -> {
-                    context!!.startActivity(Intent(context, DatePickerLightActivity::class.java))
+                "Snackbards & Toasts"->{
+                    when (itemHolder.textView.text) {
+                        "Basic"->{context!!.startActivity(Intent(context, ToastSnackbarActivity::class.java))}
+                        else -> {Toast.makeText(context, "Coming soon", Toast.LENGTH_SHORT).show()}
+                    }
                 }
-                else -> {
-                    Toast.makeText(context, "Coming soon", Toast.LENGTH_SHORT).show()
-                    Intent(context, Main2Activity::class.java)
-                }
+                else -> {Toast.makeText(context, "Coming soon", Toast.LENGTH_SHORT).show()}
             }
+//            when (itemHolder.textView.text) {
+//                "Basic" -> {
+//                    context!!.startActivity(Intent(context, Main2Activity::class.java))
+//                }
+//                "Shifting" -> {
+//                    context!!.startActivity(Intent(context, ShiftBottomNav::class.java))
+//                }
+//                "Date Light" -> {
+//                    context!!.startActivity(Intent(context, DatePickerLightActivity::class.java))
+//                }
+//                "Basic Toast & Snackbar"->{
+//                    context!!.startActivity(Intent(context, ToastSnackbarActivity::class.java))
+//                }
+//                else -> {
+//                    Toast.makeText(context, "Coming soon", Toast.LENGTH_SHORT).show()
+//                    Intent(context, Main2Activity::class.java)
+//                }
+//            }
         }
 
         itemHolder?.let {

@@ -49,13 +49,13 @@ class MainActivity : AppCompatActivity() {
 
         val bottomNavigation = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Bottom Navigation")
         bottomNavigation.children = listOf(
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Basic"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Shifting"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Light"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Dark"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Icon"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Primary"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Map Blue"))
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Basic","Bottom Navigation"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Shifting","Bottom Navigation"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Light","Bottom Navigation"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Dark","Bottom Navigation"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Icon","Bottom Navigation"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Primary","Bottom Navigation"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Map Blue","Bottom Navigation"))
 
         val bottomSheet = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Bottom Sheet")
         bottomSheet.children = listOf(
@@ -140,12 +140,12 @@ class MainActivity : AppCompatActivity() {
 
         val pickers = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Pickers")
         pickers.children = listOf(
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Date Light"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Date Dark"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Time Light"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Time Dark"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Color RGB"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Location"))
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Date Light","Pickers"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Date Dark","Pickers"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Time Light","Pickers"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Time Dark","Pickers"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Color RGB","Pickers"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Location","Pickers"))
 
         val progressActivity = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Progress & Activity")
         progressActivity.children = listOf(
@@ -169,8 +169,8 @@ class MainActivity : AppCompatActivity() {
 
         val snackbarsToats = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Snackbards & Toasts")
         snackbarsToats.children = listOf(
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Basic"),
-                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Lift FAB"))
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Basic","Snackbards & Toasts"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Lift FAB","Snackbards & Toasts"))
 
         val steppers = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Steppers")
         steppers.children = listOf(
