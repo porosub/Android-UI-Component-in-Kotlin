@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         val archetypes = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Archetypes")
         archetypes.children = listOf(
                 ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Login/Register"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "LoginFB","Archetypes"),
                 ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Stream"),
                 ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Detail"),
                 ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Creation"),

@@ -62,9 +62,9 @@ class ExpandableCardViewAdapter(var items: MutableList<Item>)
 
                     }
                 }
-                "Snackbards & Toasts"->{
+                "Archetypes"->{
                     when (itemHolder.textView.text) {
-                        "Basic"->{context!!.startActivity(Intent(context, ToastSnackbarActivity::class.java))}
+                        "LoginFB"->{context!!.startActivity(Intent(context, jLoginWithFacebook::class.java))}
                         else -> {Toast.makeText(context, "Coming soon", Toast.LENGTH_SHORT).show()}
                     }
                 }
