@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import filkom.ub.androiduicomponentkotlin.extension.ProfileDataActivity
 import kotlinx.android.synthetic.main.cardview_parent.view.*
 
 class ExpandableCardViewAdapter(var items: MutableList<Item>)
@@ -65,6 +66,12 @@ class ExpandableCardViewAdapter(var items: MutableList<Item>)
                 "Snackbards & Toasts"->{
                     when (itemHolder.textView.text) {
                         "Basic"->{context!!.startActivity(Intent(context, ToastSnackbarActivity::class.java))}
+                        else -> {Toast.makeText(context, "Coming soon", Toast.LENGTH_SHORT).show()}
+                    }
+                }
+                "Archetypes"->{
+                    when (itemHolder.textView.text) {
+                        "ProfileData"->{context!!.startActivity(Intent(context, ProfileDataActivity::class.java))}
                         else -> {Toast.makeText(context, "Coming soon", Toast.LENGTH_SHORT).show()}
                     }
                 }
