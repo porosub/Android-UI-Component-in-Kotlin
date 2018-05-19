@@ -58,6 +58,7 @@ class ExpandableCardViewAdapter(var items: MutableList<Item>)
                 "Pickers"->{
                     when (itemHolder.textView.text) {
                         "Date Light" -> {context!!.startActivity(Intent(context, DatePickerLightActivity::class.java))}
+                        "Time Light" -> {context!!.startActivity(Intent(context, TimePickerLightActivity::class.java))}
                         else -> {Toast.makeText(context, "Coming soon", Toast.LENGTH_SHORT).show()}
 
                     }
