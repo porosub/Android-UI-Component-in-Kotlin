@@ -19,7 +19,8 @@
         <activity android:name=".Main2Activity" />
         <activity android:name=".ShiftBottomNav" />
         <activity android:name=".DatePickerLightActivity" />
-        <activity android:name=".ToastSnackbarActivity"></activity>
+        <activity android:name=".ToastSnackbarActivity" />
+        <activity android:name=".extension.ProfileDataActivity"></activity>
     </application>
 
 </manifest>

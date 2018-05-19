@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
                 ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Detail"),
                 ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Creation"),
                 ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Profile"),
+                ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "ProfileData", "Archetypes"),
                 ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.CHILD, "Settings"))
 
         val extraArchetypes = ExpandableCardViewAdapter.Item(ExpandableCardViewAdapter.PARENT, "Extra Archetypes")
